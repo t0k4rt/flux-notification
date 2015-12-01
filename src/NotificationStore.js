@@ -53,7 +53,7 @@ class NotificationStore extends EventEmitter {
       if(!r.get("__cid")) {
         // compute ttl
         let ttl;
-        if(this.__collection.count() > 1) {
+        if(this.__collection.count() > 0) {
           ttl = this.__collection.toList().last().get("ttl");
           ttl += 500;
         }
