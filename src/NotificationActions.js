@@ -21,6 +21,13 @@ class NotificationActions {
     })
   }
 
+  success(_message, _context = {}) {
+    this.dispatcher.dispatch({
+      type: this.constants.actions.create,
+      record: new NotificationRecord({level: levels.SUCCESS, message:_message, context: _context})
+    })
+  }
+
   info(_message, _context = {}) {
     this.dispatcher.dispatch({
       type: this.constants.actions.create,
