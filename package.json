@@ -19,6 +19,7 @@
     "qunitjs": "~1.19.0",
     "uglify-js": "2.4.24",
     "watchify": "~3.2",
+
     "benchmark": "*"
   },
   "scripts": {
