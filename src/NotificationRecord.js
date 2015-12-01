@@ -1,7 +1,6 @@
 "use strict";
 import { Record } from 'flux-datastore';
 
-
 let levels = {
   EMERGENCY : 'emergency',
   ALERT     : 'alert',
@@ -10,6 +9,7 @@ let levels = {
   WARNING   : 'warning',
   NOTICE    : 'notice',
   INFO      : 'info',
+  SUCCESS   : 'success',
   DEBUG     : 'debug'
 }
 
