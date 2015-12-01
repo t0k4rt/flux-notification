@@ -1,5 +1,5 @@
 "use strict";
-import Record from '../Record';
+import { Record } from 'flux-datastore';
 
 
 let levels = {
@@ -13,7 +13,7 @@ let levels = {
   DEBUG     : 'debug'
 }
 
-let LoggerRecord = new Record({level: levels.DEBUG, message: null, context: {}, ttl: 4000 });
+let NotificationRecord = new Record({level: levels.DEBUG, message: null, context: {}, ttl: 4000 });
 
-export { LoggerRecord, levels };
-export default LoggerRecord;
+export { NotificationRecord, levels };
+export default NotificationRecord;
